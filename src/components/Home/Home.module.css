@@ -1,0 +1,66 @@
+/* Main Home div */
+.home {
+  width: 90%;
+  max-width: 50rem;
+  height: 600px;
+  padding: 1rem;
+  margin: 0 auto;
+  overflow-y: auto;
+  background-color: rgba(61, 61, 61, 0.9);
+  box-shadow: 2px 2px 15px white;
+}
+.home::-webkit-scrollbar {
+  width: 10px;
+}
+.home::-webkit-scrollbar-track {
+  background-color: rgb(41, 41, 41);
+}
+.home::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+}
+
+/* Styling for post cards */
+.crd {
+  width: 70%;
+  max-width: 40rem;
+  padding: 0.5rem;
+  margin: 1rem auto;
+  text-align: center;
+  position: relative;
+}
+
+/* Size of images inside cards */
+.image {
+  width: 10rem;
+  height: 10rem;
+}
+
+/* Floating Post Button */
+.floatbtn {
+  position: fixed;
+  right: 50px;
+  bottom: 30px;
+  transition: all 0.2s ease-in 0s;
+  z-index: 1;
+  cursor: pointer;
+}
+
+/* Table style for posted details */
+.table__style {
+  margin: 0 auto;
+}
+
+.table__style td {
+  padding: 0.2rem;
+}
+
+.table_bold {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 700px) {
+  .floatbtn {
+    right: 20px;
+  }
+}
